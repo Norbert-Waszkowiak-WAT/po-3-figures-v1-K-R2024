@@ -18,18 +18,19 @@ bool Quadrilateral::equals(const Quadrilateral &other) {
 Point Quadrilateral::getA() {
     return a;
 }
+Point Quadrilateral::getD() {
+   return d;
+}
+
 
 Point Quadrilateral::getB() {
-    return b;
+ return b;
 }
 
 Point Quadrilateral::getC() {
-    return c;
+   return c;
 }
 
-Point Quadrilateral::getD() {
-    return d;
-}
 
 void Quadrilateral::flip() {
     a.flip();
