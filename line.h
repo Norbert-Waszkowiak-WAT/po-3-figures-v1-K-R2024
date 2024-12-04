@@ -1,17 +1,29 @@
-#ifndef untitled_line
-#define untitled_line
-#include "point.cpp"
+#ifndef LINE_H
+#define LINE_H
 #include <iostream>
-class Line{
-    private:
-        Point a;
-        Point b;
-    public:
-        Line(Point a, Point b);
-        Line(Point &other);
-        bool equals(Point &other);
-        void flip();
-        void move(double x, double y);
-        std::string toString();
-}
+#include <string>
+#include <cmath>
+#include "point.h"
+
+class Line {
+private:
+    Point a;
+    Point b;
+public:
+    Line();
+
+    Line(Point a, Point b);
+
+    Line(const Line &other);
+
+
+    bool equals(const Line &other);
+
+    void flip();
+
+    void move(double x, double y);
+
+    std::string toString();
+};
+
 #endif
