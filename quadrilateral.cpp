@@ -18,10 +18,6 @@ bool Quadrilateral::equals(const Quadrilateral &other) {
 Point Quadrilateral::getA() {
     return a;
 }
-Point Quadrilateral::getD() {
-   return d;
-}
-
 
 Point Quadrilateral::getB() {
  return b;
@@ -29,6 +25,9 @@ Point Quadrilateral::getB() {
 
 Point Quadrilateral::getC() {
    return c;
+}
+Point Quadrilateral::getD() {
+   return d;
 }
 
 
