@@ -12,13 +12,6 @@ Line::Line(Point a, Point b)
 Line::Line(const Line &other) 
 : a(other.a), b(other.b) {};
 
-Point Line::getA() {
-    return a;
-}
-
-Point Line::getB() {
-    return b;
-}
 
 bool Line::equals(const Line &other) {
     return a.equals(other.a) && b.equals(other.b);
