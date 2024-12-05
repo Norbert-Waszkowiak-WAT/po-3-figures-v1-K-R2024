@@ -1,46 +1,47 @@
-#ifndef Group_figure
-#define Group_figure
+//
+// Created by nwaszkowiak on 26.11.24.
+//
+
+#ifndef PO_LAB3_FIGURES_GROUP_H
+#define PO_LAB3_FIGURES_GROUP_H
+
 #include <vector>
 #include "line.h"
 #include "triangle.h"
 #include "quadrilateral.h"
-class Group{
-#include vector
-#include line.h
-#include triangle.h
-#include quadrilateral.h
 
-class Group
+class Group {
 private:
-   std::vectorLine lines;
-   std::vectorTriangle triangles;
-   std::vectorQuadrilateral quadrilaterals;
+    std::vector<Line> lines;
+    std::vector<Triangle> triangles;
+    std::vector<Quadrilateral> quadrilaterals;
 public:
-   Group();
+    Group();
 
-   Group(const Group other);
+    Group(const Group &other);
 
-   bool equals(Group other);
+    bool equals(Group &other);
 
-   void remove(Line line);
+    void remove(Line line);
 
-   void remove(Triangle triangle);
+    void remove(Triangle triangle);
 
-   void remove(Quadrilateral quadrilateral);
+    void remove(Quadrilateral quadrilateral);
 
-   void add(Line line);
+    void add(Line line);
 
-   void add(Triangle triangle);
+    void add(Triangle triangle);
 
-   void add(Quadrilateral quadrilateral);
+    void add(Quadrilateral quadrilateral);
 
-   void flip();
+    void flip();
 
-   void move(double x, double y);
+    void move(double x, double y);
 
-   std::string toString();
+    std::string toString();
 
-   double getSurface();
-;
+    double getSurface();
 };
-#endif
+
+
+#endif //PO_LAB3_FIGURES_GROUP_H
